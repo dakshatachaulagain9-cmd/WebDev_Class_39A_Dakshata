@@ -1,0 +1,160 @@
+header{
+    text-align: center;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+  
+header{
+    background-color: #14323d;
+    padding:1px;
+    border-radius: 15px;
+}
+ 
+.Intro{
+text-align: left;
+
+}
+
+.Intro h1 {
+    font-weight: bold;
+}
+
+.Intro P{
+    text-align:justify;
+}
+
+.meet{
+    text-align: center;
+}
+
+
+.img{
+    display: flex;
+align-items:center;
+flex-direction: column;
+}
+
+
+.figcaption{
+ padding: 0px;
+ background-color:#5b8696;
+}
+
+.Experience li:nth-child(odd){
+    font-weight:lighter;   
+}
+
+.Experience li:nth-child(even){
+    font-weight:bolder;   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+ 
+th {
+    background-color:#14323d;
+    color: white;
+    padding: 16px;
+    border: 2px solid #14323d;
+}
+ 
+td {
+    padding: 14px;
+    border: 2px solid #14323d;
+    text-align: center;
+}
+
+.video{
+    text-align:center;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border:0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe9ed;
+    padding: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #14323d;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+button:hover{
+color:#5b8696
+}
+
+.Project {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.grid-item {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #14323d;
+    color:white;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}

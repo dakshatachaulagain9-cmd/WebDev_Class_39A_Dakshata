@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boss Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>  
+    <header>
     <h1> Sita Sharma </h1> 
     <h2>  Chief Executive Officer, ORA Pvt. Ltd.</h2>
-    
 
-
+    <nav class="navbar">
     <a href="#Introduction"> Introduction</a>
     <a href="#Experience">Experience</a>
     <a href="#Skills">Skills</a>
     <a href="#Projects">Projects</a>
     <a href="#Video">Video</a>
+    <a href="#Contact">Contact Us</a>
+    </nav>
+    </header>
 
+    <main>
 
-<h1 id ="Introduction"> Introduction</h1>
-
+    <div class="Intro"> 
+        <h1 id ="Introduction"> Introduction</h1>
+    
     <p>   <strong>Sita Sharma</strong> is a <em>visionary</em> entrepreneur with over <u>12 years</u> of experience in fine jewelry design and luxury retail.
         She holds an MBA from a leading business school and has grown <em>Anemora </em>from a small boutique into
        a nationally recognized brand,once achieving an impressive 8<sup>x</sup> increase in annual revenue, 
@@ -28,14 +34,17 @@
         <u>inspire</u> her team to blend tradition with modern design every single day.
     </p>
 
-
-
-
-    <h3>Meet Boss </h3>
-    <figure> <img src="Sita.png" alt="meet boss" width ="200" height="200"> 
-    <figcaption> I'm pretty </figcaption>
+      <h3 class="meet">Meet Boss</h3>
+    <figure class="img"> <img src="Sita.png" alt="meet boss" width ="200" height="200"> 
+    <figcaption class="figcaption"> Sita sharma CEO of Anemora </figcaption>
     </figure>
-    <h2 id ="Experience"> Experience</h2>
+
+    </div>
+
+     
+       
+<div class="Experience">
+       <h2 id ="Experience"> Experience</h2>
     <ol>
         <li>Chief Executive Officer, Anemora (2019-Present)</li>
         <li>Head of Design & Retail Strategy, Silver Leaf Jewels (2015-2019)</li>
@@ -44,8 +53,11 @@
       
     </ol>
 
+</div>
+ 
 
-<h2 id="Skills">Skills</h2>
+<div class="skill">
+    <h2 id="Skills">Skills</h2>
 
 <table> 
        <thead>
@@ -70,21 +82,54 @@
     </tr>
     </tbody>
   </table>
+</div>
 
 
-
+<div class="Project">
     <h2 id="Projects">Projects</h2>
-<ul>
-    <li>Launch of Anemora's Signature Bridal Collection</li>
-    <li>Rebranding and Store Redesign for Flagship Boutique</li>
-    <li>Sustainable Sourcing Initiative for Ethical Gemstones</li>
-    <li>Anemora Online Store Launch</li>
-</ul>
+    <div class="grid">
+        <div class="grid-item">Launch of Anemora's Signature Bridal Collection</div>
+        <div class="grid-item">Rebranding and Store Redesign for Flagship Boutique</div>
+        <div class="grid-item">Sustainable Sourcing Initiative for Ethical Gemstones</div>
+        <div class="grid-item">Anemora Online Store Launch</div>
+    </div>
+</div>
 
 
 <h2 id="Video">Video</h2>
+<div class="video">
  <iframe  src="https://www.youtube.com/embed/mE8oveK-aYk"
         title="vlog: display" frameborder="0" width="560" height="300"></iframe>
 
+</div>
+<div class="form">
+    <h2 id="Contact">Contact</h2>
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <p>Gender</p>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="">Select a role</option>
+            <option value="employee">Employee</option>
+            <option value="client">Client</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</main>
 </body>
 </html>
